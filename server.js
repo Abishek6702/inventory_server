@@ -10,7 +10,7 @@ const orderRoutes = require('./routes/orders');
 const cors = require('cors');
 
 const app =express();
-const allowedOrigins = ['http://localhost:5173',""]
+const allowedOrigins = ['http://localhost:5173',"https://invotab.vercel.app"]
 app.use(cors({
   origin: function(origin,callback){
     if(!origin) return callback(null,true);
